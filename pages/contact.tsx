@@ -34,7 +34,7 @@ export default function ContactPage() {
                 onMouseLeave={(e) => e.currentTarget.style.boxShadow = "none"}>
                 <h3 style={{ fontSize: "1rem", fontWeight: 600, marginBottom: "0.5rem", color: "var(--foreground)" }}>LinkedIn</h3>
                 <p style={{ margin: 0, color: "var(--accent)", textDecoration: "none" }}>
-                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "none" }}>Visit Profile →</a>
+                  <a href="https://github.com/SannnDey" target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "none" }}>Visit Profile →</a>
                 </p>
               </div>
               <div style={{ padding: "1.5rem", border: "1px solid var(--border)", borderRadius: "8px", transition: "all 300ms ease", cursor: "pointer" }}
