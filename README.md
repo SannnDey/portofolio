@@ -20,6 +20,25 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## SMTP / Contact form
+
+To enable real email delivery for the contact form, create a `.env.local` file at the project root (do not commit it) and provide SMTP credentials. Copy the example file:
+
+```powershell
+copy .env.local.example .env.local
+```
+
+Fill in the values in `.env.local`:
+
+- `SMTP_HOST` — your SMTP server host (e.g. `smtp.gmail.com`)
+- `SMTP_PORT` — port (usually `587` for TLS)
+- `SMTP_USER` / `SMTP_PASS` — authentication
+- `SMTP_SECURE` — set to `true` if using SSL on port 465
+- `FROM_ADDRESS` / `TO_ADDRESS` — email addresses used for sending/receiving
+
+After creating `.env.local`, restart the dev server. The contact form will attempt to send email via `nodemailer` using these variables; if not configured, messages are logged to the server console.
+
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
