@@ -26,7 +26,7 @@ export default function ContactPage() {
                 onMouseLeave={(e) => e.currentTarget.style.boxShadow = "none"}>
                 <h3 style={{ fontSize: "1rem", fontWeight: 600, marginBottom: "0.5rem", color: "var(--foreground)" }}>Email</h3>
                 <p style={{ margin: 0, color: "var(--accent)", textDecoration: "none" }}>
-                  <a href="mailto:you@example.com" style={{ color: "inherit", textDecoration: "none" }}>you@example.com</a>
+                  <a href="mailto:ihsanul.wahid10@gmail.com" style={{ color: "inherit", textDecoration: "none" }}>ihsanul.wahid10@gmail.com</a>
                 </p>
               </div>
               <div style={{ padding: "1.5rem", border: "1px solid var(--border)", borderRadius: "8px", transition: "all 300ms ease", cursor: "pointer" }}
@@ -42,7 +42,7 @@ export default function ContactPage() {
                 onMouseLeave={(e) => e.currentTarget.style.boxShadow = "none"}>
                 <h3 style={{ fontSize: "1rem", fontWeight: 600, marginBottom: "0.5rem", color: "var(--foreground)" }}>GitHub</h3>
                 <p style={{ margin: 0, color: "var(--accent)", textDecoration: "none" }}>
-                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "none" }}>Follow Me →</a>
+                  <a href="https://github.com/SannnDey" target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "none" }}>Follow Me →</a>
                 </p>
               </div>
             </div>
