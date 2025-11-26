@@ -1,19 +1,52 @@
 [
   {
   "id": "1",
-  "title": "Laundry Mobile App",
-  "description": "Aplikasi laundry Android.",
+  "title": "Laundry Mobile App (Frontend)",
+  "description": "Aplikasi mobile laundry berbasis Flutter yang berfungsi sebagai sistem informasi manajemen laundry untuk mengelola pesanan, pencatatan keuangan, dan notifikasi pelanggan.",
+  "shortDescription": "Aplikasi laundry Android berbasis Flutter dengan UI modern, manajemen pesanan, dan cetak struk.",
   "url": "/apk/laundry-app.apk",
-  "image": "/images/logo laundry.jpg",
-  "type": "apk"
-},
+  "image": "/images/frontend/iconn_app.png",
+  "type": "apk",
+  "technologies": ["Flutter", "Dart", "Lottie", "Firebase", "Printer Thermal"],
+  "features": [
+    "UI/UX modern dengan animasi Lottie",
+    "Manajemen pesanan (pickup, proses, selesai)",
+    "Manajemen pemasukan & pengeluaran",
+    "Share WhatsApp untuk notifikasi pesanan selesai",
+    "Cetak struk fisik menggunakan printer thermal",
+    "Dashboard laporan transaksi",
+    "State management ringan & optimal"
+  ],
+  "longDescription": "Aplikasi frontend laundry berbasis Flutter yang dirancang sebagai sistem informasi manajemen laundry. Aplikasi ini menangani pesanan masuk, proses pengerjaan, hingga pesanan selesai. Dilengkapi dengan fitur cetak struk menggunakan printer thermal, laporan pemasukan & pengeluaran, serta fitur berbagi informasi ke pelanggan melalui WhatsApp. UI dirancang modern dan interaktif dengan bantuan animasi Lottie.",
+  "challenge": "Mengintegrasikan printer thermal dan WhatsApp Share di berbagai device Android, serta memastikan UI tetap responsif dengan data yang terus berubah.",
+  "solution": "Menggunakan Flutter dengan integrasi printer thermal melalui plugin khusus, memanfaatkan Firebase untuk notifikasi, dan mengoptimalkan performa UI dengan StatefulWidget serta animator berbasis Lottie.",
+  "github": "https://github.com/SannnDey/LAUNDRY-FRONTEND",
+  "liveUrl": null,
+  "gallery": ["/images/frontend/login.jpg", "/images/frontend/home.jpg", "/images/frontend/kasir.jpg", "/images/frontend/kiloan.jpg", "/images/frontend/satuan.jpg", "/images/frontend/struk.jpg", "/images/frontend/listpesanan.jpg", "/images/frontend/detailorder.jpg", "/images/frontend/pengeluaran.jpg", "/images/frontend/riwayatpengeluaran.jpg", "/images/frontend/cetakpengeluaran.jpg", "/images/frontend/laporanharian.jpg", "/images/frontend/cetaklaporanharian.jpg", "/images/frontend/laporankeuangan.jpg", "/images/frontend/cetaklaporankeuangan.jpg"]
+  },
   {
   "id": "2",
-  "title": "Portfolio Website",
-  "description": "Situs portfolio modern.",
+  "title": "Laundry API Service (Backend)",
+  "description": "Backend service berbasis Java Quarkus dengan JOOQ untuk mengelola pesanan, data keuangan, struk, dan integrasi WhatsApp.",
+  "shortDescription": "Backend Quarkus dengan JOOQ dan MySQL untuk sistem manajemen laundry.",
   "url": "https://mysite.com",
-  "image": "/images/portfolio.png",
-  "type": "web"
-}
-
+  "image": "/images/backend/quarkus.png",
+  "type": "API Service",
+  "technologies": ["Java", "Quarkus", "JOOQ", "MySQL", "JWT"],
+  "features": [
+    "REST API untuk aplikasi Flutter",
+    "User authentication menggunakan JWT",
+    "Manajemen pesanan & status pengerjaan",
+    "Manajemen pemasukan & pengeluaran laundry",
+    "Endpoint untuk cetak struk",
+    "Integrasi WhatsApp Share (via link/message)",
+    "JOOQ repository untuk query database yang aman dan terstruktur"
+  ],
+  "longDescription": "Backend sistem informasi laundry yang dibangun menggunakan Java Quarkus dan dikelola menggunakan JOOQ Repository. Backend ini menangani seluruh logika bisnis: mulai dari manajemen pesanan, pencatatan pemasukan-pengeluaran, hingga endpoint khusus untuk mencetak struk fisik. Menggunakan MySQL sebagai database utama, backend dirancang modular, cepat, dan scalable.",
+  "challenge": "Mengelola struktur data yang kompleks untuk pesanan satuan dan kiloan, serta mengoptimalkan performa query menggunakan JOOQ.",
+  "solution": "Menggunakan JOOQ untuk query tipe-safe, indexing database untuk performa, dan pemisahan service–repository untuk meningkatkan maintainability. Quarkus digunakan untuk meningkatkan kecepatan startup dan efisiensi resource.",
+  "github": "https://github.com/SannnDey/LAUNDRY-BACKEND",
+  "liveUrl": "https://mysite.com",
+  "gallery": ["/images/backend/loginapi.png", "/images/backend/schema.png", "/images/backend/projectstruktur.png", "/images/backend/strukapi.png"]
+  }
 ]

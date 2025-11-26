@@ -63,7 +63,7 @@ export default function Home() {
                 View All →
               </Link>
             </div>
-            <ProjectsSection />
+            <ProjectsSection limit={3} />
           </section>
         </ScrollReveal>
 

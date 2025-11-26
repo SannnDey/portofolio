@@ -1,4 +1,5 @@
 import type { AppProps } from "next/app";
+import Head from "next/head";
 import { useState, useEffect, useRef } from "react";
 import "../styles/globals.css";
 import Header from "../components/Header";
@@ -41,6 +42,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       {/* Scroll Progress Bar */}
       <div
         style={{
@@ -92,7 +96,8 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       </div>
 
       <div className="min-h-screen flex flex-col text-foreground" style={{ background: 'linear-gradient(135deg, #0f172a 0%, #1a1f35 50%, #1e1b4b 100%)' }}>
-        <Header />
+        <Header scrollDirection={scrollDirection} />
+
         <main className="flex-1">
           <Component {...pageProps} />
         </main>

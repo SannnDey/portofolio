@@ -47,9 +47,19 @@ export default function ScrollReveal({
       className={className}
       style={{
         animation: isVisible
-          ? `${animation} ${duration}ms ease-out ${delay}ms forwards`
+          ? `${animation} ${duration}ms cubic-bezier(0.22, 1, 0.36, 1) ${delay}ms forwards`
           : 'none',
         opacity: isVisible ? 1 : 0,
+        willChange: 'transform, opacity',
+        transform: !isVisible
+          ? animation === 'gentleSlideUp'
+            ? 'translateY(30px)'
+            : animation === 'gentleSlideInLeft'
+            ? 'translateX(-30px)'
+            : 'scale(0.98)'
+          : undefined,
+        backfaceVisibility: 'hidden',
+        transformOrigin: 'center center',
       }}
     >
       {children}
