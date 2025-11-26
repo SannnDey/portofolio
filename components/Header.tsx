@@ -3,15 +3,13 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 import styles from "../styles/Header.module.css";
 
-export default function Header({ scrollDirection }: { scrollDirection: 'up' | 'down' }) {
+export default function Header() {
   const router = useRouter();
   const isActive = (href: string) => router.pathname === href;
   const [open, setOpen] = useState(false);
 
   return (
-    <header 
-  className={`${styles.header} ${scrollDirection === "down" ? styles.hideHeader : styles.showHeader}`}
->
+    <header className={styles.header}>
       <div className={styles.container}>
         <Link href="/" className={styles.brand}>
           My Portofolio

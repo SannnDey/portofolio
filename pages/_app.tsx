@@ -96,8 +96,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       </div>
 
       <div className="min-h-screen flex flex-col text-foreground" style={{ background: 'linear-gradient(135deg, #0f172a 0%, #1a1f35 50%, #1e1b4b 100%)' }}>
-        <Header scrollDirection={scrollDirection} />
-
+        <Header />
         <main className="flex-1">
           <Component {...pageProps} />
         </main>
